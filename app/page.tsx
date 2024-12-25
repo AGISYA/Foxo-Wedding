@@ -1,101 +1,156 @@
-import Image from "next/image";
+"use client";
+import React, { useState, useEffect, useRef } from "react";
+import Link from "next/link";
+import { FaArrowUp } from "react-icons/fa"; // Ikon dari React Icons
+import Hero from "@/components/organisems/hero";
+import ChatSection from "@/components/organisems/chatsection";
+import WeddingDocumentation from "@/components/organisems/weddingdocumentation";
+import PhotoboothWedding from "@/components/organisems/photoboothwedding";
+import WhyFoxo from "@/components/organisems/whyfoxo";
+import Warranty from "@/components/organisems/warranty";
+import WeddingPrices from "@/components/organisems/weddingprice";
+import WeddingPackage from "@/components/organisems/waddingpackage";
+import Booking from "@/components/organisems/booking";
+import Footer from "@/components/organisems/footer";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const [isScrolled, setIsScrolled] = useState(false); // Mengatur background navbar
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // Mengatur menu mobile
+  const [showScrollTop, setShowScrollTop] = useState(false); // Untuk tombol scroll ke atas
+  const heroRef = useRef<HTMLDivElement>(null);
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 300);
+    };
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsScrolled(!entry.isIntersecting);
+      },
+      { threshold: 0.1 }
+    );
+
+    if (heroRef.current) {
+      observer.observe(heroRef.current);
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      if (heroRef.current) {
+        observer.unobserve(heroRef.current);
+      }
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  return (
+    <div className="flex flex-col min-h-screen">
+      {/* Navbar */}
+      <nav
+        className={`fixed w-full top-0 z-50 transition-all ${
+          isScrolled ? "bg-amber-950 shadow-lg" : "bg-transparent"
+        }`}
+      >
+        <div className="container mx-auto flex justify-between items-center p-4">
+          {/* Desktop Menu */}
+          <ul className="hidden md:flex space-x-6 mx-24">
+            {["Home", "Photos", "Videos", "Booking", "Contact"].map((item) => (
+              <li key={item}>
+                <Link
+                  href={`#${item.toLowerCase()}`}
+                  className="text-white hover:underline hover:decoration-white hover:decoration-2 transition-colors"
+                >
+                  {item}
+                </Link>
+              </li>
+            ))}
+          </ul>
+
+          {/* Mobile Menu Toggle */}
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle navigation menu"
+              className="text-white"
+            >
+              {isMenuOpen ? (
+                <span className="text-2xl">✖</span>
+              ) : (
+                <span className="text-2xl">☰</span>
+              )}
+            </button>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <div
+            className={`md:hidden p-4 transition-all ${
+              isScrolled ? "bg-amber-950 " : "bg-transparent"
+            } text-white`}
+          >
+            <ul>
+              {["Home", "Photos", "Videos", "Booking", "Contact"].map(
+                (item) => (
+                  <li key={item} className="my-2">
+                    <Link
+                      href={`#${item.toLowerCase()}`}
+                      className="block text-white hover:underline hover:decoration-white hover:decoration-2 transition-colors"
+                    >
+                      {item}
+                    </Link>
+                  </li>
+                )
+              )}
+            </ul>
+          </div>
+        )}
+      </nav>
+
+      {/* Hero Section with ref */}
+      <div ref={heroRef} id="home">
+        <Hero />
+      </div>
+
+      {/* Other Sections */}
+      <ChatSection />
+      <div id="videos">
+        <WeddingDocumentation />
+      </div>
+      <div id="photos">
+        <PhotoboothWedding />
+      </div>
+
+      <div>
+        <WhyFoxo />
+        <Warranty />
+        <WeddingPrices />
+        <WeddingPackage />
+      </div>
+      <div id="booking">
+        <Booking />
+      </div>
+
+      {/* Scroll to Top Button */}
+      {showScrollTop && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-6 right-6 bg-amber-950 text-white p-3 rounded-full shadow-lg hover:bg-amber-600 transition-all"
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          <FaArrowUp size={20} />
+        </button>
+      )}
+
+      {/* Footer */}
+      <div id="contact">
+        <Footer />
+      </div>
     </div>
   );
 }
