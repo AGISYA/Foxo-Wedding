@@ -45,7 +45,7 @@ export default function WeddingDocumentation() {
                 muted
                 loop
               >
-                <source src="/videos/wedding.mp4" type="video/mp4" />
+                <source src="/videos/videowedding.mp4" type="video/mp4" />
                 <img
                   src="/images/video-placeholder.jpg"
                   alt="Video placeholder"
