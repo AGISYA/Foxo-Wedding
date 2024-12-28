@@ -195,7 +195,7 @@ export default function GaleryFoto() {
         {/* Overlay Content */}
         <div className="absolute inset-0 flex flex-col justify-center px-4"></div>
       </section>
-      <section className="md:-mt-[3800px] -mt-[4650px]">
+      <section className="md:-mt-[3800px] bg-white -mt-[4650px]">
         <div className="sm:block bento-section">
           <img
             src="/images/SCF9423.jpg"
