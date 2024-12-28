@@ -19,7 +19,6 @@ export default function GaleryFoto() {
         {/* Overlay Content */}
         <div className="absolute inset-0 flex flex-col justify-center text-white bg-black bg-opacity-50 px-4"></div>
       </section>
-
       {/* Welcome Section */}
       <div className="flex items-center justify-center min-h-screen">
         <div className="p-6 mx-auto max-w-lg">
@@ -29,13 +28,13 @@ export default function GaleryFoto() {
           </h1>
 
           {/* Image Section */}
-          <div className="mb-4">
+          <div className="mb-4 ">
             <Image
               src="/images/DSCF0514.jpg"
               alt="A couple standing in a room with large windows"
               width={600}
               height={400}
-              className="w-full h-auto"
+              className="w-full h-auto md:-mx-96"
             />
           </div>
 
@@ -58,7 +57,6 @@ export default function GaleryFoto() {
           </div>
         </div>
       </div>
-
       {/* Gallery Section */}
       <div className="flex flex-col">
         {/* Gambar yang hanya muncul di perangkat mobile */}
@@ -136,7 +134,6 @@ export default function GaleryFoto() {
           />
         </div>
       </div>
-
       <section className="relative md:flex min-h-screen bento-hero mt-20 overflow-hidden">
         {/* Background Image */}
         <div className="relative w-full h-[900px]">
@@ -160,7 +157,6 @@ export default function GaleryFoto() {
           />
         </div>
       </section>
-
       <section className="relative md:flex min-h-screen bento-hero -mt-[600px] md:-mt-0 overflow-hidden">
         {/* Background Image 1 */}
         <div className="relative w-full h-[500px] sm:h-[600px] md:h-[1200px]">
@@ -185,7 +181,6 @@ export default function GaleryFoto() {
           />
         </div>
       </section>
-
       {/* Gallery Header */}
       <h1 className="text-center md:-mt-0 mt-20 text-black text-6xl font-serif mb-6">
         Galery:
@@ -193,7 +188,6 @@ export default function GaleryFoto() {
       <p className="text-center text-gray-700 text-2xl font-serif mt-5 leading-relaxed mb-6">
         See the love and joy through our lens.
       </p>
-
       {/* Full Gallery Section */}
       <section className="relative md:-mt-[3800px] -mt-[4650px] min-h-[10000px] h-[1000px] bento-hero">
         {/* Background Image */}
@@ -210,7 +204,6 @@ export default function GaleryFoto() {
         {/* Overlay Content */}
         <div className="absolute inset-0 flex flex-col justify-center px-4"></div>
       </section>
-
       {/* Additional Images */}
       <section className="md:-mt-[3800px] bg-white -mt-[4650px] overflow-hidden">
         <div className="sm:block bento-section">
@@ -232,7 +225,6 @@ export default function GaleryFoto() {
           />
         </div>
       </section>
-
       {/* Side-by-Side Images */}
       <section className="flex mt-10 h-screen">
         {/* Gambar kiri dengan lebar lebih kecil */}
@@ -257,7 +249,6 @@ export default function GaleryFoto() {
           />
         </div>
       </section>
-
       {/* Additional Images */}
       <div className="sm:block bento-section">
         <Image
@@ -271,6 +262,395 @@ export default function GaleryFoto() {
       <div className="sm:block bento-section">
         <Image
           src="/images/DSCF0650.jpg"
+          alt="Full Screen Image"
+          width={1200}
+          height={800}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="sm:block bento-section">
+        <Image
+          src="/images/DSCF0422 (2).jpg"
+          alt="Full Screen Image"
+          width={1200}
+          height={800}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="sm:block bento-section">
+        <Image
+          src="/images/DSCF9764.jpg"
+          alt="Full Screen Image"
+          width={1200}
+          height={800}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <section className="flex h-full">
+        {/* Gambar kiri dengan lebar lebih kecil */}
+        <div className="flex-shrink-0 w-1/2 h-full overflow-hidden relative">
+          <Image
+            src="/images/DSCF9554.jpg"
+            alt="Full Screen Image"
+            width={1200}
+            height={800}
+            className="object-cover w-full h-full"
+          />
+        </div>
+
+        {/* Gambar kanan dengan lebar lebih besar */}
+        <div className="flex-grow w-1/2 h-full overflow-hidden relative">
+          <Image
+            src="/images/DSCF9746.jpg"
+            alt="Full Screen Image"
+            width={1200}
+            height={800}
+            className="object-cover w-full h-full"
+            style={{ objectPosition: "top" }} // Fokus ke bagian atas gambar
+          />
+        </div>
+      </section>
+      <div className="sm:block bento-section">
+        <Image
+          src="/images/DSCF0577.jpg"
+          alt="Full Screen Image"
+          width={1200}
+          height={800}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <section className="flex h-full">
+        {/* Gambar kiri dengan lebar lebih kecil */}
+        <div className="flex-shrink-0 w-1/2 h-full overflow-hidden relative">
+          <Image
+            src="/images/DSCF9802.jpg"
+            alt="Full Screen Image"
+            width={1200}
+            height={800}
+            className="object-cover w-full h-full"
+          />
+        </div>
+
+        {/* Gambar kanan dengan lebar lebih besar */}
+        <div className="flex-grow w-1/2 h-full overflow-hidden relative">
+          <Image
+            src="/images/DSCF0487 (1).jpg"
+            alt="Full Screen Image"
+            width={1200}
+            height={800}
+            className="object-cover w-full h-full"
+            style={{ objectPosition: "top" }} // Fokus ke bagian atas gambar
+          />
+        </div>
+      </section>
+      <div className="sm:block bento-section">
+        <Image
+          src="/images/DSCF0103.jpg"
+          alt="Full Screen Image"
+          width={1200}
+          height={800}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <section className="flex h-full">
+        {/* Gambar kiri dengan lebar lebih kecil */}
+        <div className="flex-shrink-0 w-1/2 h-full overflow-hidden relative">
+          <Image
+            src="/images/DSCF0110.jpg"
+            alt="Full Screen Image"
+            width={1200}
+            height={800}
+            className="object-cover w-full h-full"
+          />
+        </div>
+
+        {/* Gambar kanan dengan lebar lebih besar */}
+        <div className="flex-grow w-1/2 h-full overflow-hidden relative">
+          <Image
+            src="/images/DSCF0309.jpg"
+            alt="Full Screen Image"
+            width={1200}
+            height={800}
+            className="object-cover w-full h-full"
+            style={{ objectPosition: "top" }} // Fokus ke bagian atas gambar
+          />
+        </div>
+      </section>
+      <div className="sm:block bento-section">
+        <Image
+          src="/images/DSCF0300.jpg"
+          alt="Full Screen Image"
+          width={1200}
+          height={800}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="sm:block bento-section">
+        <Image
+          src="/images/DSCF0342.jpg"
+          alt="Full Screen Image"
+          width={1200}
+          height={800}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="sm:block bento-section">
+        <Image
+          src="/images/DSCF0395.jpg"
+          alt="Full Screen Image"
+          width={1200}
+          height={800}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="sm:block bento-section">
+        <Image
+          src="/images/DSCF0422.jpg"
+          alt="Full Screen Image"
+          width={1200}
+          height={800}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="sm:block bento-section">
+        <Image
+          src="/images/DSCF0482.jpg"
+          alt="Full Screen Image"
+          width={1200}
+          height={800}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="sm:block bento-section">
+        <Image
+          src="/images/DSCF0556.jpg"
+          alt="Full Screen Image"
+          width={1200}
+          height={800}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="sm:block bento-section">
+        <Image
+          src="/images/DSCF0490.jpg"
+          alt="Full Screen Image"
+          width={1200}
+          height={800}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <section className="flex h-full">
+        {/* Gambar kiri dengan lebar lebih kecil */}
+        <div className="flex-shrink-0 w-1/2 h-full overflow-hidden relative">
+          <Image
+            src="/images/DSCF0546.jpg"
+            alt="Full Screen Image"
+            width={1200}
+            height={800}
+            className="object-cover w-full h-full"
+          />
+        </div>
+
+        {/* Gambar kanan dengan lebar lebih besar */}
+        <div className="flex-grow w-1/2 h-full overflow-hidden relative">
+          <Image
+            src="/images/DSCF0500.jpg"
+            alt="Full Screen Image"
+            width={1200}
+            height={800}
+            className="object-cover w-full h-full"
+            style={{ objectPosition: "top" }} // Fokus ke bagian atas gambar
+          />
+        </div>
+      </section>{" "}
+      <div className="sm:block bento-section">
+        <Image
+          src="/images/DSCF0514.jpg"
+          alt="Full Screen Image"
+          width={1200}
+          height={800}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="sm:block bento-section">
+        <Image
+          src="/images/DSCF0529.jpg"
+          alt="Full Screen Image"
+          width={1200}
+          height={800}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="sm:block bento-section">
+        <Image
+          src="/images/DSCF0536.jpg"
+          alt="Full Screen Image"
+          width={1200}
+          height={800}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <section className="flex h-full">
+        {/* Gambar kiri dengan lebar lebih kecil */}
+        <div className="flex-shrink-0 w-1/2 h-full overflow-hidden relative">
+          <Image
+            src="/images/DSCF9786.jpg"
+            alt="Full Screen Image"
+            width={1200}
+            height={800}
+            className="object-cover w-full h-full"
+          />
+        </div>
+
+        {/* Gambar kanan dengan lebar lebih besar */}
+        <div className="flex-grow w-1/2 h-full overflow-hidden relative">
+          <Image
+            src="/images/DSCF9478.jpg"
+            alt="Full Screen Image"
+            width={1200}
+            height={800}
+            className="object-cover w-full h-full"
+            style={{ objectPosition: "top" }} // Fokus ke bagian atas gambar
+          />
+        </div>
+      </section>{" "}
+      <section className="flex h-full">
+        {/* Gambar kiri dengan lebar lebih kecil */}
+        <div className="flex-shrink-0 w-1/2 h-full overflow-hidden relative">
+          <Image
+            src="/images/DSCF9856.jpg"
+            alt="Full Screen Image"
+            width={1200}
+            height={800}
+            className="object-cover w-full h-full"
+          />
+        </div>
+
+        {/* Gambar kanan dengan lebar lebih besar */}
+        <div className="flex-grow w-full h-full overflow-hidden relative">
+          <Image
+            src="/images/DSCF9687 (1).jpg"
+            alt="Full Screen Image"
+            width={1200}
+            height={800}
+            className="object-cover w-full h-full"
+          />
+        </div>
+      </section>{" "}
+      <div className="sm:block bento-section">
+        <Image
+          src="/images/DSCF9397.jpg"
+          alt="Full Screen Image"
+          width={1200}
+          height={800}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="sm:block bento-section">
+        <Image
+          src="/images/DSCF9633.jpg"
+          alt="Full Screen Image"
+          width={1200}
+          height={800}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="sm:block bento-section">
+        <Image
+          src="/images/DSCF9509.jpg"
+          alt="Full Screen Image"
+          width={1200}
+          height={800}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="sm:block bento-section">
+        <Image
+          src="/images/DSCF9484.jpg"
+          alt="Full Screen Image"
+          width={1200}
+          height={800}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="sm:block bento-section">
+        <Image
+          src="/images/DSCF9582.jpg"
+          alt="Full Screen Image"
+          width={1200}
+          height={800}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="sm:block bento-section">
+        <Image
+          src="/images/DSCF9842 (1).jpg"
+          alt="Full Screen Image"
+          width={1200}
+          height={800}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="sm:block bento-section">
+        <Image
+          src="/images/DSCF1051 (1).jpg"
+          alt="Full Screen Image"
+          width={1200}
+          height={800}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="sm:block bento-section">
+        <Image
+          src="/images/DSCF9817-1 (1).jpg"
+          alt="Full Screen Image"
+          width={1200}
+          height={800}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="sm:block bento-section">
+        <Image
+          src="/images/DSCF1058.jpg"
+          alt="Full Screen Image"
+          width={1200}
+          height={800}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="sm:block bento-section">
+        <Image
+          src="/images/DSCF1117.jpg"
+          alt="Full Screen Image"
+          width={1200}
+          height={800}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <div className="sm:block bento-section">
+        <Image
+          src="/images/Untitled-1-4 (1).jpg"
+          alt="Full Screen Image"
+          width={1200}
+          height={800}
+          className="w-full h-full object-cover"
+        />
+      </div>
+      <h1 className="text-center md:mt-48 mt-44 text-black md:text-9xl text-5xl font-serif mb-6">
+        Thank You
+      </h1>
+      <p className="text-center text-gray-700 md:text-2xl text-xl font-serif mt-5 leading-relaxed mb-6">
+        Connect with us for more information.
+      </p>{" "}
+      <h1 className="text-center md:mt-40 mt-20 text-black md:text-6xl text-4xl font-serif mb-6">
+        Lest&apos;s Conect
+      </h1>
+      <p className="text-center text-gray-700 md:text-2xl text-lg font-serif mt-5 leading-relaxed mb-6">
+        Phone: +62 895-0589-5274
+      </p>
+      <div className="sm:block bento-section mt-60">
+        <Image
+          src="/images/DSCF9687.jpg"
           alt="Full Screen Image"
           width={1200}
           height={800}

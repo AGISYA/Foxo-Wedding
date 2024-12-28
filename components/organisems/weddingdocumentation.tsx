@@ -45,10 +45,7 @@ export default function WeddingDocumentation() {
                 muted
                 loop
               >
-                <source
-                  src="https://drive.google.com/file/d/1bUaFHZfDtp6oqJ5dTdjRVPGJ17ikMMRp/preview"
-                  type="video/mp4"
-                />
+                <source src="/videos/TEASER SILMA (1).mp4" type="video/mp4" />
                 <img
                   src="/images/video-placeholder.jpg"
                   alt="Video placeholder"
