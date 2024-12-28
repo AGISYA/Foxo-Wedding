@@ -6,9 +6,9 @@ export default function GaleryFoto() {
       {/* Hero Section */}
       <section className="relative min-h-screen bento-hero overflow-hidden">
         {/* Background Image */}
-        <div className="absolute inset-0">
+        <div className="absolute inset-0 ">
           <Image
-            src="/images/1 (1).jpg" // Ganti dengan path gambar di folder public
+            src="/images/1 (1).jpg"
             alt="Hero Image"
             layout="fill" // Memastikan gambar memenuhi seluruh area
             objectFit="cover" // Menjaga rasio gambar
@@ -42,8 +42,8 @@ export default function GaleryFoto() {
           {/* Description Text */}
           <p className="text-center text-gray-700 text-xl mt-5 leading-relaxed mb-6">
             Two souls meet beneath starlight, bound by a quiet promise. Hand in
-            hand, they walk a path of shared dreams, wrapped in love's gentle
-            glow.
+            hand, they walk a path of shared dreams, wrapped in love&apos;s
+            gentle glow.
           </p>
 
           {/* Additional Image */}
@@ -141,65 +141,68 @@ export default function GaleryFoto() {
         {/* Background Image */}
         <div className="relative w-full h-[900px]">
           <Image
-            src="/images/4.jpg" // Ganti dengan path gambar di folder public
+            src="/images/4.jpg"
             alt="Hero Image"
             layout="fill"
-            objectFit="contain" // Menjaga gambar terlihat sepenuhnya
+            objectFit="contain"
             priority
             className="-mt-72 md:-mt-0"
           />
         </div>
         <div className="relative md:-mt-16 -mt-80 w-full h-[1200px]">
           <Image
-            src="/images/5.jpg" // Ganti dengan path gambar di folder public
+            src="/images/5.jpg"
             alt="Hero Image"
             layout="fill"
-            objectFit="contain" // Menjaga gambar terlihat sepenuhnya
+            objectFit="contain"
             priority
             className="-mt-72 md:-mt-0"
           />
         </div>
       </section>
 
-      <section className="relative md:flex min-h-screen bento-hero mt-20 overflow-hidden">
-        {/* Background Image */}
-        <div className="relative md:-mt-16 -mt-[500px] w-full h-[1200px]">
+      <section className="relative md:flex min-h-screen bento-hero -mt-[600px] md:-mt-0 overflow-hidden">
+        {/* Background Image 1 */}
+        <div className="relative w-full h-[500px] sm:h-[600px] md:h-[1200px]">
           <Image
-            src="/images/7.jpg" // Ganti dengan path gambar di folder public
+            src="/images/7.jpg"
             alt="Hero Image"
             layout="fill"
-            objectFit="contain" // Menjaga gambar terlihat sepenuhnya
+            objectFit="cover"
             priority
-            className="-mt-72 md:-mt-0"
+            className="w-full h-full object-cover"
           />
         </div>
-        <div className="relative w-full h-[900px]">
+        {/* Background Image 2 */}
+        <div className="relative w-full h-[500px] sm:h-[600px] md:h-[900px]">
           <Image
-            src="/images/6.jpg" // Ganti dengan path gambar di folder public
+            src="/images/6.jpg"
             alt="Hero Image"
             layout="fill"
-            objectFit="contain" // Menjaga gambar terlihat sepenuhnya
+            objectFit="cover"
             priority
-            className="md:-mt-16 -mt-[600px]"
+            className="w-full h-full object-cover"
           />
         </div>
       </section>
 
-      <h1 className="text-center md:-mt-0 -mt-[600px] text-black text-6xl font-serif mb-6">
+      {/* Gallery Header */}
+      <h1 className="text-center md:-mt-0 mt-20 text-black text-6xl font-serif mb-6">
         Galery:
       </h1>
       <p className="text-center text-gray-700 text-2xl font-serif mt-5 leading-relaxed mb-6">
         See the love and joy through our lens.
       </p>
 
+      {/* Full Gallery Section */}
       <section className="relative md:-mt-[3800px] -mt-[4650px] min-h-[10000px] h-[1000px] bento-hero">
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/SCF9461.jpg" // Ganti dengan path gambar di folder public
+            src="/images/SCF9461.jpg"
             alt="Hero Image"
-            layout="fill" // Memastikan gambar memenuhi seluruh area
-            objectFit="contain" // Menjaga rasio gambar
+            layout="fill"
+            objectFit="contain"
             priority
           />
         </div>
@@ -208,6 +211,7 @@ export default function GaleryFoto() {
         <div className="absolute inset-0 flex flex-col justify-center px-4"></div>
       </section>
 
+      {/* Additional Images */}
       <section className="md:-mt-[3800px] bg-white -mt-[4650px] overflow-hidden">
         <div className="sm:block bento-section">
           <Image
@@ -227,43 +231,9 @@ export default function GaleryFoto() {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="sm:block bento-section">
-          <Image
-            src="/images/SCF9215.jpg"
-            alt="Full Screen Image"
-            width={1200}
-            height={800}
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <div className="sm:block bento-section">
-          <Image
-            src="/images/DSCF0082.jpg"
-            alt="Full Screen Image"
-            width={1200}
-            height={800}
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <div className="sm:block bento-section">
-          <Image
-            src="/images/SCF9379.jpg"
-            alt="Full Screen Image"
-            width={1200}
-            height={800}
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <div className="sm:block bento-section">
-          <Image
-            src="/images/DSCF0103 (2).jpg"
-            alt="Full Screen Image"
-            width={1200}
-            height={800}
-            className="w-full h-full object-cover"
-          />
-        </div>
       </section>
+
+      {/* Side-by-Side Images */}
       <section className="flex mt-10 h-screen">
         {/* Gambar kiri dengan lebar lebih kecil */}
         <div className="flex-shrink-0 w-1/3 h-full overflow-hidden relative">
@@ -287,6 +257,8 @@ export default function GaleryFoto() {
           />
         </div>
       </section>
+
+      {/* Additional Images */}
       <div className="sm:block bento-section">
         <Image
           src="/images/DSCF0312.jpg"
