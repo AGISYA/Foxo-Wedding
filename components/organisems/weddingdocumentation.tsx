@@ -37,7 +37,7 @@ export default function WeddingDocumentation() {
                 kayak trailer film!
               </p>
             </div>
-            <div className="md:w-1/2 flex  items-center">
+            <div className="md:w-1/2 flex items-center">
               <video
                 className="w-full max-w-xs sm:max-w-sm md:max-w-md h-auto rounded-lg shadow-lg"
                 controls
@@ -45,7 +45,10 @@ export default function WeddingDocumentation() {
                 muted
                 loop
               >
-                <source src="/videos/videowedding.mp4" type="video/mp4" />
+                <source
+                  src="https://drive.google.com/file/d/1bUaFHZfDtp6oqJ5dTdjRVPGJ17ikMMRp/preview"
+                  type="video/mp4"
+                />
                 <img
                   src="/images/video-placeholder.jpg"
                   alt="Video placeholder"
