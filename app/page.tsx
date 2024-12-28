@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { FaArrowUp } from "react-icons/fa"; // Ikon dari React Icons
+import { FaArrowUp } from "react-icons/fa";
 import Hero from "@/components/organisems/hero";
 import ChatSection from "@/components/organisems/chatsection";
 import WeddingDocumentation from "@/components/organisems/weddingdocumentation";
@@ -14,10 +14,18 @@ import Booking from "@/components/organisems/booking";
 import Footer from "@/components/organisems/footer";
 
 export default function Home() {
-  const [isScrolled, setIsScrolled] = useState(false); // Mengatur background navbar
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // Mengatur menu mobile
-  const [showScrollTop, setShowScrollTop] = useState(false); // Untuk tombol scroll ke atas
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
   const heroRef = useRef<HTMLDivElement>(null);
+
+  const menuItems = [
+    { name: "Home", href: "#home" },
+    { name: "Photos", href: "/galery" },
+    { name: "Videos", href: "#videos" },
+    { name: "Booking", href: "#booking" },
+    { name: "Contact", href: "#contact" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -59,14 +67,14 @@ export default function Home() {
       >
         <div className="container mx-auto flex justify-between items-center p-4">
           {/* Desktop Menu */}
-          <ul className="hidden md:flex space-x-6 mx-24">
-            {["Home", "Photos", "Videos", "Booking", "Contact"].map((item) => (
-              <li key={item}>
+          <ul className="hidden md:flex space-x-6">
+            {menuItems.map((item) => (
+              <li key={item.name}>
                 <Link
-                  href={`#${item.toLowerCase()}`}
+                  href={item.href}
                   className="text-white hover:underline hover:decoration-white hover:decoration-2 transition-colors"
                 >
-                  {item}
+                  {item.name}
                 </Link>
               </li>
             ))}
@@ -77,43 +85,33 @@ export default function Home() {
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               aria-label="Toggle navigation menu"
-              className="text-white"
+              className="text-white text-2xl"
             >
-              {isMenuOpen ? (
-                <span className="text-2xl">✖</span>
-              ) : (
-                <span className="text-2xl">☰</span>
-              )}
+              {isMenuOpen ? "✖" : "☰"}
             </button>
           </div>
         </div>
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div
-            className={`md:hidden p-4 transition-all ${
-              isScrolled ? "bg-amber-950 " : "bg-transparent"
-            } text-white`}
-          >
+          <div className="md:hidden p-4 bg-amber-950 text-white">
             <ul>
-              {["Home", "Photos", "Videos", "Booking", "Contact"].map(
-                (item) => (
-                  <li key={item} className="my-2">
-                    <Link
-                      href={`#${item.toLowerCase()}`}
-                      className="block text-white hover:underline hover:decoration-white hover:decoration-2 transition-colors"
-                    >
-                      {item}
-                    </Link>
-                  </li>
-                )
-              )}
+              {menuItems.map((item) => (
+                <li key={item.name} className="my-2">
+                  <Link
+                    href={item.href}
+                    className="block hover:underline hover:decoration-white hover:decoration-2 transition-colors"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         )}
       </nav>
 
-      {/* Hero Section with ref */}
+      {/* Hero Section */}
       <div ref={heroRef} id="home">
         <Hero />
       </div>
@@ -123,16 +121,11 @@ export default function Home() {
       <div id="videos">
         <WeddingDocumentation />
       </div>
-      <div id="photos">
-        <PhotoboothWedding />
-      </div>
-
-      <div>
-        <WhyFoxo />
-        <Warranty />
-        <WeddingPrices />
-        <WeddingPackage />
-      </div>
+      <PhotoboothWedding />
+      <WhyFoxo />
+      <Warranty />
+      <WeddingPrices />
+      <WeddingPackage />
       <div id="booking">
         <Booking />
       </div>
