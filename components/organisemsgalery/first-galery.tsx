@@ -32,8 +32,8 @@ export default function FirstGalery() {
           <Image
             src="/images/DSCF9365.jpg"
             alt="Left Image"
-            width={600}
-            height={400}
+            width={6000}
+            height={4000}
             className="w-full h-full object-cover"
           />
         </div>
@@ -41,8 +41,8 @@ export default function FirstGalery() {
           <Image
             src="/images/SCF9215 (1).jpg"
             alt="Right Image"
-            width={600}
-            height={400}
+            width={6000}
+            height={4000}
             className="w-full h-full object-cover"
           />
         </div>
@@ -53,8 +53,8 @@ export default function FirstGalery() {
           <Image
             src="/images/SCF9423 (1).jpg"
             alt="Left Image"
-            width={600}
-            height={400}
+            width={6000}
+            height={4000}
             className="w-full h-full object-cover"
           />
         </div>
@@ -62,8 +62,8 @@ export default function FirstGalery() {
           <Image
             src="/images/DSCF9856.jpg"
             alt="Right Image"
-            width={600}
-            height={400}
+            width={6000}
+            height={4000}
             className="w-full h-full object-cover"
           />
         </div>
@@ -73,8 +73,8 @@ export default function FirstGalery() {
         <Image
           src="/images/DSCF9842.jpg"
           alt="Full Screen Image"
-          width={1200}
-          height={800}
+          width={12000}
+          height={8000}
           className="w-full h-screen object-cover"
         />
       </div>
