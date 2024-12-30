@@ -1,4 +1,5 @@
 "use client";
+import Footer from "@/components/organisems/footer";
 import FifthGalery from "@/components/organisemsgalery/fifth-gallery";
 import FirstGalery from "@/components/organisemsgalery/first-galery";
 import FourthGallery from "@/components/organisemsgalery/fourth-gallery";
@@ -121,6 +122,7 @@ export default function GaleryFoto() {
         </button>
       )}
       <FifthGalery />
+      <Footer />
     </main>
   );
 }
