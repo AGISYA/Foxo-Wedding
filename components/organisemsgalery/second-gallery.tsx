@@ -7,7 +7,7 @@ export default function SecondGallery() {
       {/* Background Image 1 */}
       <div className="relative md:mt-0 mt-[450px] w-full h-[500px] sm:h-[600px] md:h-[1200px]">
         <Image
-          src="/image/image121.png"
+          src="/images/7.jpg"
           alt="Hero Image"
           layout="fill"
           objectFit="cover"

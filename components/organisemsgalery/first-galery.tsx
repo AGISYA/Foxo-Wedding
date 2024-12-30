@@ -73,8 +73,8 @@ export default function FirstGalery() {
         <Image
           src="/images/DSCF9842.jpg"
           alt="Full Screen Image"
-          width={12000}
-          height={8000}
+          width={1200}
+          height={800}
           className="w-full h-screen object-cover"
         />
       </div>

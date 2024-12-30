@@ -16,11 +16,11 @@ export default function GaleryFoto() {
   const heroRef = useRef<HTMLDivElement>(null);
 
   const menuItems = [
-    { name: "Home", href: "#home" },
+    { name: "Home", href: "/" },
     { name: "Photos", href: "/galery" },
-    { name: "Videos", href: "#videos" },
-    { name: "Booking", href: "#booking" },
-    { name: "Contact", href: "#contact" },
+    { name: "Videos", href: "/" },
+    { name: "Booking", href: "/" },
+    { name: "Contact", href: "/" },
   ];
 
   useEffect(() => {

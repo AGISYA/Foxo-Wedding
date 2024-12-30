@@ -1,6 +1,5 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import Link from "next/link";
 import { FaArrowUp } from "react-icons/fa";
 import Hero from "@/components/organisems/hero";
 import ChatSection from "@/components/organisems/chatsection";
@@ -70,12 +69,12 @@ export default function Home() {
           <ul className="hidden md:flex space-x-6">
             {menuItems.map((item) => (
               <li key={item.name}>
-                <Link
+                <a
                   href={item.href}
                   className="text-white hover:underline hover:decoration-white hover:decoration-2 transition-colors"
                 >
                   {item.name}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
@@ -98,12 +97,13 @@ export default function Home() {
             <ul>
               {menuItems.map((item) => (
                 <li key={item.name} className="my-2">
-                  <Link
+                  <a
                     href={item.href}
                     className="block hover:underline hover:decoration-white hover:decoration-2 transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
                   >
                     {item.name}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
