@@ -16,7 +16,7 @@ export default function ThirdGallery() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/SCF9461.jpg"
+            src="https://drive.google.com/uc?export=view&id=10x-w5FfDyphDSTfIfQ6JCp_oe3XGkLGU"
             alt="Hero Image"
             layout="fill"
             objectFit="contain"

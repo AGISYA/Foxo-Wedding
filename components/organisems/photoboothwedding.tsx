@@ -14,8 +14,9 @@ export default function PhotoboothWedding() {
             className="rounded-lg "
             height={700}
             width={700}
-          />
+          />{" "}
         </div>
+
         <p className="md:text-base text-black italic -mt-20">
           Kita expert banget nih, pokoknya paketan kita sampe acara kamu beres.
         </p>

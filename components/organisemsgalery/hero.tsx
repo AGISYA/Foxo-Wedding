@@ -7,7 +7,7 @@ export default function HeroGalery() {
       {/* Background Image */}
       <div className="absolute inset-0 ">
         <Image
-          src="/images/1 (1).jpg"
+          src="https://drive.google.com/uc?id=1Iu1AAZ80y-tiDxBGLVNS0fZ8x_B-QHf2"
           alt="Hero Image"
           layout="fill" // Memastikan gambar memenuhi seluruh area
           objectFit="cover" // Menjaga rasio gambar

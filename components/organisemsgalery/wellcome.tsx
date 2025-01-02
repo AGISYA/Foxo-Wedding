@@ -13,7 +13,7 @@ export default function Wellcome() {
         {/* Image Section */}
         <div className="mb-4 ">
           <Image
-            src="/images/DSCF0514.jpg"
+            src="https://drive.google.com/uc?id=1NsffLqfDP0-CGM5T0GPuSmpcG2J3kzA7"
             alt="A couple standing in a room with large windows"
             width={600}
             height={400}
@@ -31,7 +31,7 @@ export default function Wellcome() {
         {/* Additional Image */}
         <div className="mt-10">
           <Image
-            src="/images/DSCF0487 (1).jpg"
+            src="https://drive.google.com/uc?export=view&id=18GVvNG1wtJNv_sl9d8ozu4-m4MZXibTh"
             alt="A couple silhouette against a bright window"
             width={800}
             height={100}

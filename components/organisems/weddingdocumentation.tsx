@@ -47,7 +47,7 @@ export default function WeddingDocumentation() {
               >
                 <source src="/videos/TEASER SILMA (1).mp4" type="video/mp4" />
                 <img
-                  src="/images/video-placeholder.jpg"
+                  src="https://drive.google.com/uc?export=view&id=1y8bPeEC40wutyq2elBP9V6SsAmbo6LqQ"
                   alt="Video placeholder"
                   className="w-full h-auto rounded-lg"
                 />
