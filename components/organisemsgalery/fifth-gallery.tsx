@@ -19,7 +19,7 @@ export default function FifthGalery() {
       </p>
       <div className="sm:block bento-section mt-60">
         <Image
-          src="/images/DSCF9687.jpg"
+          src="https://drive.google.com/uc?export=view&id=11sqUgMVeusYPXTw_dnGoXQqJ1RQgokMo"
           alt="Full Screen Image"
           width={1200}
           height={800}

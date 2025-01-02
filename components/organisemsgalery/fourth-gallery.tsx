@@ -222,7 +222,7 @@ export default function FourthGallery() {
       </div>
       <div className="sm:block bento-section">
         <Image
-          src="/images/DSCF0556.jpg"
+          src="https://drive.google.com/uc?export=view&id=1agUvEWdpqvfkZUCKNNn6cjz4_4w43qDp"
           alt="Full Screen Image"
           width={1200}
           height={800}
@@ -231,7 +231,7 @@ export default function FourthGallery() {
       </div>
       <div className="sm:block bento-section">
         <Image
-          src="/images/DSCF0490.jpg"
+          src="https://drive.google.com/uc?export=view&id=1RIB0owv7W2retCBKIa05JoPrtSAY1sRA"
           alt="Full Screen Image"
           width={1200}
           height={800}
@@ -242,7 +242,7 @@ export default function FourthGallery() {
         {/* Gambar kiri dengan lebar lebih kecil */}
         <div className="flex-shrink-0 w-1/2 h-full overflow-hidden relative">
           <Image
-            src="/images/DSCF0546.jpg"
+            src="https://drive.google.com/uc?export=view&id=1o9kf6uP-vq_BSLxjU_p0TMb-VHAkkY8h"
             alt="Full Screen Image"
             width={1200}
             height={800}
@@ -253,7 +253,7 @@ export default function FourthGallery() {
         {/* Gambar kanan dengan lebar lebih besar */}
         <div className="flex-grow w-1/2 h-full overflow-hidden relative">
           <Image
-            src="/images/DSCF0500.jpg"
+            src="https://drive.google.com/uc?export=view&id=1JUqNJmVZMsbXIt24izeY8BchjJAcdzng"
             alt="Full Screen Image"
             width={1200}
             height={800}
@@ -264,7 +264,7 @@ export default function FourthGallery() {
       </section>{" "}
       <div className="sm:block bento-section">
         <Image
-          src="/images/DSCF0514.jpg"
+          src="https://drive.google.com/uc?export=view&id=1NsffLqfDP0-CGM5T0GPuSmpcG2J3kzA7"
           alt="Full Screen Image"
           width={1200}
           height={800}
@@ -273,7 +273,7 @@ export default function FourthGallery() {
       </div>
       <div className="sm:block bento-section">
         <Image
-          src="/images/DSCF0529.jpg"
+          src="https://drive.google.com/uc?export=view&id=1O9O0jSLhHynNv2Q6ULj2H3YXT8bv6B59"
           alt="Full Screen Image"
           width={1200}
           height={800}
@@ -282,7 +282,7 @@ export default function FourthGallery() {
       </div>
       <div className="sm:block bento-section">
         <Image
-          src="/images/DSCF0536.jpg"
+          src="https://drive.google.com/uc?export=view&id=18ZzwPcCG-OVcxxZoTOi2NrxctI4vmH1s"
           alt="Full Screen Image"
           width={1200}
           height={800}
@@ -293,7 +293,7 @@ export default function FourthGallery() {
         {/* Gambar kiri dengan lebar lebih kecil */}
         <div className="flex-shrink-0 w-1/2 h-full overflow-hidden relative">
           <Image
-            src="/images/DSCF9786.jpg"
+            src="https://drive.google.com/uc?export=view&id=1xCUQPTA7HJP2xVyNCkpWaxrjfEGZNzom"
             alt="Full Screen Image"
             width={1200}
             height={800}
@@ -304,7 +304,7 @@ export default function FourthGallery() {
         {/* Gambar kanan dengan lebar lebih besar */}
         <div className="flex-grow w-1/2 h-full overflow-hidden relative">
           <Image
-            src="/images/DSCF9478.jpg"
+            src="https://drive.google.com/uc?export=view&id=1qlKp2bEfXfepII8imMcR0BfMtB-qofMS"
             alt="Full Screen Image"
             width={1200}
             height={800}
@@ -317,7 +317,7 @@ export default function FourthGallery() {
         {/* Gambar kiri dengan lebar lebih kecil */}
         <div className="flex-shrink-0 w-1/2 h-full overflow-hidden relative">
           <Image
-            src="/images/DSCF9856.jpg"
+            src="https://drive.google.com/uc?export=view&id=1FCcnVhEOKLngpDrtvzDmyP85ZFaAr7hQ"
             alt="Full Screen Image"
             width={1200}
             height={800}
@@ -326,19 +326,19 @@ export default function FourthGallery() {
         </div>
 
         {/* Gambar kanan dengan lebar lebih besar */}
-        <div className="flex-grow w-full h-full overflow-hidden relative">
+        <div className="flex-grow w-full h-full overflow-hidden relative ">
           <Image
-            src="/images/DSCF9687 (1).jpg"
+            src="https://drive.google.com/uc?export=view&id=11sqUgMVeusYPXTw_dnGoXQqJ1RQgokMo"
             alt="Full Screen Image"
             width={1200}
             height={800}
-            className="object-cover w-full h-full"
+            className="object-cover w-full h-[311px] md:h-[1140px]"
           />
         </div>
       </section>{" "}
       <div className="sm:block bento-section">
         <Image
-          src="/images/DSCF9397.jpg"
+          src="https://drive.google.com/uc?export=view&id=10EVgOPRrzzVrT0lZt_I2u8ZsKtqb0Fu1"
           alt="Full Screen Image"
           width={1200}
           height={800}
@@ -347,7 +347,7 @@ export default function FourthGallery() {
       </div>
       <div className="sm:block bento-section">
         <Image
-          src="/images/DSCF9633.jpg"
+          src="https://drive.google.com/uc?export=view&id=1zA6aZ2qrBX8KbBEqbg3-aTt5GHFw2dTn"
           alt="Full Screen Image"
           width={1200}
           height={800}
@@ -356,7 +356,7 @@ export default function FourthGallery() {
       </div>
       <div className="sm:block bento-section">
         <Image
-          src="/images/DSCF9509.jpg"
+          src="https://drive.google.com/uc?export=view&id=17axtQl7vELmP-fMN4Oe0EQMLuGnhZAM_"
           alt="Full Screen Image"
           width={1200}
           height={800}
@@ -365,7 +365,7 @@ export default function FourthGallery() {
       </div>
       <div className="sm:block bento-section">
         <Image
-          src="/images/DSCF9484.jpg"
+          src="https://drive.google.com/uc?export=view&id=1AzEIG5MOEe7yhxfL6ydmt3EVl4JRjXlr"
           alt="Full Screen Image"
           width={1200}
           height={800}
@@ -374,7 +374,7 @@ export default function FourthGallery() {
       </div>
       <div className="sm:block bento-section">
         <Image
-          src="/images/DSCF9582.jpg"
+          src="https://drive.google.com/uc?export=view&id=1yFZCEUMNEx16HhNzNYr_CqGAUFEGiY3D"
           alt="Full Screen Image"
           width={1200}
           height={800}
@@ -383,7 +383,7 @@ export default function FourthGallery() {
       </div>
       <div className="sm:block bento-section">
         <Image
-          src="/images/DSCF9842 (1).jpg"
+          src="https://drive.google.com/uc?export=view&id=1PUN17kELuKut3f2O7Vucq-zBHg2DHyog"
           alt="Full Screen Image"
           width={1200}
           height={800}
@@ -392,7 +392,7 @@ export default function FourthGallery() {
       </div>
       <div className="sm:block bento-section">
         <Image
-          src="/images/DSCF1051 (1).jpg"
+          src="https://drive.google.com/uc?export=view&id=1p7BP48KyrWFFTc5uxA6wqNpZKA7GsZHK"
           alt="Full Screen Image"
           width={1200}
           height={800}
@@ -401,7 +401,7 @@ export default function FourthGallery() {
       </div>
       <div className="sm:block bento-section">
         <Image
-          src="/images/DSCF9817-1 (1).jpg"
+          src="https://drive.google.com/uc?export=view&id=1JKyMxx8TjzLjLDbzRYDIj-ekjIXJ-S49"
           alt="Full Screen Image"
           width={1200}
           height={800}
@@ -410,7 +410,7 @@ export default function FourthGallery() {
       </div>
       <div className="sm:block bento-section">
         <Image
-          src="/images/DSCF1058.jpg"
+          src="https://drive.google.com/uc?export=view&id=1Y2UjnY19luF3HBAigBUyXDuuO-XjrAbi"
           alt="Full Screen Image"
           width={1200}
           height={800}
@@ -419,7 +419,7 @@ export default function FourthGallery() {
       </div>
       <div className="sm:block bento-section">
         <Image
-          src="/images/DSCF1117.jpg"
+          src="https://drive.google.com/uc?export=view&id=1q2l6turugryTdH3Kf0F93gMPUrV8rKpY"
           alt="Full Screen Image"
           width={1200}
           height={800}
@@ -428,7 +428,7 @@ export default function FourthGallery() {
       </div>
       <div className="sm:block bento-section">
         <Image
-          src="/images/Untitled-1-4 (1).jpg"
+          src="https://drive.google.com/uc?export=view&id=1mH5_QmFg5U3_x2aOH6HQPeuOAu27b_8i"
           alt="Full Screen Image"
           width={1200}
           height={800}
