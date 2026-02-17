@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -36,6 +37,15 @@ export default function Hero() {
           <p className="text-base mx-10 md:text-xl  drop-shadow-lg">
             Kami hadir untuk memastikan kisah cinta kalian terekam sempurna
           </p>
+
+          <div className="mx-10 mt-6">
+            <Link
+              href="/booking"
+              className="inline-block bg-white text-black px-8 py-3 rounded-full font-bold text-lg hover:bg-gray-200 transition-all transform hover:scale-105 shadow-lg"
+            >
+              Booking Now
+            </Link>
+          </div>
         </div>
       </section>
     </main>

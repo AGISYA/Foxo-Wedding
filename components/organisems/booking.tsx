@@ -41,9 +41,7 @@ export default function Booking() {
         </p>
       </div>
       <Link
-        href="https://wa.me/+6289505895274?text=Hallo FoxoWedding"
-        target="_blank"
-        rel="noopener noreferrer"
+        href="/booking"
         className="mt-16 bg-red-700 text-white text-xs md:text-2xl lg:text-2xl font-bold py-3 px-6 lg:py-4 lg:px-8 rounded-full transition-transform transform hover:scale-105"
       >
         BOOK NOW!

@@ -1,10 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import 'react-day-picker/dist/style.css';
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* Override RDP variables globally */
+  --rdp-cell-size: 40px;
+  --rdp-accent-color: #78350f;
+  /* Amber-900 */
+  --rdp-background-color: #fffbeb;
+  /* Amber-50 */
+  --rdp-outline: 2px solid var(--rdp-accent-color);
+  --rdp-outline-selected: 2px solid var(--rdp-accent-color);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,4 +27,104 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Force styling using high specificity */
+html body .rdp {
+  --rdp-cell-size: 40px;
+  margin: 0;
+}
+
+/* Caption (Month/Year Title) */
+html body .rdp-caption_label,
+html body .rdp-caption {
+  color: #000000 !important;
+  /* Black */
+  font-size: 1.25rem !important;
+  font-weight: 800 !important;
+  opacity: 1 !important;
+}
+
+/* Navigation Arrows */
+html body .rdp-nav_button {
+  color: #000000 !important;
+  /* Black */
+  width: 32px;
+  height: 32px;
+}
+
+html body .rdp-nav_button:hover {
+  background-color: #f3f4f6 !important;
+  /* Gray-100 */
+}
+
+/* SVG Icon inside nav buttons */
+html body .rdp-nav_icon {
+  fill: #000000 !important;
+  /* Black */
+  width: 20px;
+  height: 20px;
+}
+
+/* Head Cells (Mon, Tue, etc) */
+html body .rdp-head_cell {
+  color: #000000 !important;
+  /* Black */
+  font-weight: 700 !important;
+  font-size: 0.95rem !important;
+  text-transform: uppercase;
+  opacity: 1 !important;
+}
+
+/* Day Numbers */
+html body .rdp-day {
+  color: #000000 !important;
+  /* Black */
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+}
+
+/* Selected Day */
+html body .rdp-day_selected,
+html body .rdp-day_selected:focus-visible,
+html body .rdp-day_selected:hover {
+  color: white !important;
+  background-color: #78350f !important;
+  /* Amber-900 (Keep theme for selection bg) */
+  font-weight: bold !important;
+  border: none !important;
+  opacity: 1 !important;
+}
+
+/* Today's Date */
+html body .rdp-day_today {
+  color: #d97706 !important;
+  /* Amber-600 */
+  font-weight: 900 !important;
+  text-decoration: underline;
+  opacity: 1 !important;
+}
+
+/* Dropdown specific */
+html body .rdp-dropdown_year,
+html body .rdp-dropdown_month {
+  color: #000000 !important;
+  /* Black */
+  font-size: 1rem !important;
+  font-weight: bold !important;
+}
+
+html body .rdp-dropdown {
+  color: #000000 !important;
+  /* Black */
+}
+
+/* Ensure native selects are visible */
+html body select {
+  color: #000000;
+  background-color: white;
+  border: 1px solid #a8a29e;
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-weight: 600;
 }
